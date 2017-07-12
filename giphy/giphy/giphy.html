@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title> GIFs</title>
+	</head>
+	<body>
+		<table>
+			{% for data in content['data'] %}
+			<tr>
+				<td>{{ data['id'] }}</td>
+				<td>{{ data['slug'] }}</td>
+				<td>{{ data['rating'] }}</td>
+				<td>
+					<img   src="{{ data['images']['downsized']['url']}}" onclick= <a href="{{ data['url'] }}" ></a>>
+				</td>
+			</tr>
+			{% endfor %}
+		</table>
+		
+	</body>
+</html>

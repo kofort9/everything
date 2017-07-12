@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>
+			Fortune 
+		</title>
+	</head>
+	<body>
+		{% if fortune == 'A fresh start will put you on your way.' %}
+			<h1>{{ fortune }}</h1>
+		{% else%}
+			<p>{{ fortune }}</p>
+		{% endif %}
+		<h1>Fortune???</h1>
+		{{ date }}
+		{{ fortune }}
+
+		<ul>
+		{% for f in all_fortunes %}
+			<p{{ f }}</p>
+		{% endfor %}
+		</ul>
+
+		<h3>{{ email['subject'] }}</h3>
+		<em>{{ email['sender'] }}</em>
+		<p>{{ email['text'] }}</p>
+	</body>
+</html>

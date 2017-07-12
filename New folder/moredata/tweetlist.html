@@ -1,0 +1,13 @@
+<html>
+	<body>
+		<h1> Tweet List</h1>
+		<ol>
+		{%for l in listoftweet %}
+			<li>
+				{{ l['tweet'] }}
+			</li>
+		{% endfor %}
+		</ol>
+		
+	</body>
+</html>

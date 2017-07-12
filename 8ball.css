@@ -1,0 +1,25 @@
+h1{
+	padding-left: 300px;
+	margin: auto;
+
+}
+img{
+	padding-left: 300px;
+	margin: auto;
+}
+#the8ball{
+	width: 100px;
+	height:100px;
+	text-align:center;
+	margin: auto;
+}
+#ask{
+	padding-left: 0px;
+	text-align: center;
+	margin: auto;
+}
+
+.space{
+	width: 500px;
+	height: 100px;
+}

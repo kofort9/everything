@@ -1,0 +1,11 @@
+html{
+	background-color: lightgreen; 
+}
+img{
+	width: 400px;
+	margin: auto;
+}
+.daynight{
+	display: block;
+  margin-left: 400px;
+  margin-right: auto;

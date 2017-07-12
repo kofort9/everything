@@ -1,0 +1,30 @@
+<!-- If the number of reviews is 0, then display “This movie needs some reviews. Be the first to review!” -->
+<!-- If the number of reviews is less than 5 AND stars is less than 3, then display “I’m not sure about this movie” -->
+<!-- If the number of reviews is greater than 30 AND it has more than 3 stars then display “This movie must be great!!” -->
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>{{ name }}</h1>
+			<p>{{ length }} mins</p>
+			<p>This movie has {{ num_reviews }} reviews.</p>
+			<p>{{ stars }} stars</p>
+
+			{% if num_reviews > 30 and stars > 3 %}
+				This movie must be great!!
+
+			{% elif num_reviews < 5 and stars < 3 %}
+				I'm not sure about this movie.
+
+			{% elif num_reviews == 0 %}
+				This movie needs some reviews. Be the first to review!
+			{% endif %}
+			
+		</div>
+	</body>
+</html>
+
+
+
+

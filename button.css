@@ -1,0 +1,12 @@
+img{
+	width: 800px;
+	height: 500px;
+}
+#poster{
+	display: block;
+	width:800Px;
+}
+
+#poster.border{
+	border: 19px dotted red;
+}

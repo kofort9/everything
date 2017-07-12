@@ -1,0 +1,31 @@
+<html>
+	<body>
+	<!-- show all email values -->
+		<h1>Emails</h1>
+		<ul>
+		{% for e in emails %}
+				<li> Title: {{ e['title'] }} </li>
+					<ul>
+						<li>Sender: {{ e['sender'] }}</li>
+					</ul>	
+		{% endfor %}
+		</ul>
+	<!-- show only the email adresses  -->
+		<h1>Email Addresses</h1>
+		<ul>
+		{% for e in emails %}
+			<li>{{ e['sender'] }}</li>
+		{% endfor %}
+		</ul>
+	<!-- show only non-spam emails -->
+		<h1>Real emails</h1>
+		<ul>
+		{% for e in emails %}
+			{% if e['sender'] != 'fakeaccount@gmail.com'
+			%} 
+				<li>{{ e['sender'] }}</li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</body>
+</html>
